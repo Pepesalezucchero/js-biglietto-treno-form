@@ -7,74 +7,90 @@
         <title>Acquista biglietto del treno</title>
 
         <link rel="stylesheet" href="css/style.css">
-
         <!--font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
         <!--font awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     </head>
 
     <body>
-
         <header>
-
             <!--barra di navigazione-->
             <nav class="navigation-bar">
-
                 <div class="container">
-
-                    <div class="logo">
-                        
+                    <div class="logo">           
                         <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Trenitalia_logo.svg" alt="logo"></a>
-
                     </div>
 
                     <div class="info">
-
                         <a href="#"><i class="fa-solid fa-earth-europe" style="color: #006a6a;"></i> Lingua <i class="fa-solid fa-sort-down arrow" style="color: #006a6a;"></i></a>
                         <a class="current-page" href="#">Acquista</a>
                         <a href="#">Le mie prenotazioni</a>
-
                     </div>
-
                 </div>
-
             </nav>
-
         </header>
-
         <main>
-
-            <!--acquisto biglietto-->
+            <!--sezione centrale-->
             <section class="main-content">
-
-                <div class="container">
-
+                <!--acquisto biglietto-->
+                <div class="container up">
                     <div class="ticket-buying">
-
                         <h1>Calcola il prezzo del tuo biglietto</h1>
 
-                        
+                        <div class="name">
+                            <span>Nome Cognome</span>
+                            <input type="text">
+                        </div>
+                        <div class="distance">
+                            <span>Km da percorrere</span>
+                            <input type="number">
+                            <br>
+                            <span class="disclaimer">Il costo è di 0.21&euro; a Km.</span>
+                        </div>
+                        <div class="age">
+                            <span>Fascia d'et&agrave;</span>
+                            <input type="number">
+                            <br>
+                            <span class="disclaimer">Sconto del 20% per et&agrave; inferiori ai 18 anni. <br> 40% per et&agrave; superiori ai 65 anni.</span>
+                        </div>
 
+                        <button class="send">Genera</button>
                     </div>
-
                 </div>
+                <!--prezzo biglietto-->
+                <div class="container down">
+                    <div class="ticket-buying">
+                        <h1>Il tuo biglietto</h1>
 
+                        <div class="passenger">
+                            <span>Passeggero:</span>
+                            <span><strong>gigino</strong></span>
+                        </div>
+                        <div class="carriage">
+                            <span>Carrozza:</span>
+                            <span><strong>6565</strong></span>
+                        </div>
+                        <div class="train">
+                            <span>Treno numero:</span>    
+                            <span><strong>656556</strong></span>
+                        </div>
+                        <div class="cost">
+                            <span>Costo del biglietto:</span>
+                            <span><strong>3434343&euro;</strong></span>    
+                        </div>
+
+                        <button class="buy">Acquista</button>
+                    </div>
+                </div>
             </section>
-
-            <!--prezzo biglietto-->
-            <section>
-
-
-
-            </section>
-
         </main>
-    
+        
+    <!--javascript-->
+    <script src="js/script.js"></script>
+
     </body>
 
 </html>

@@ -58,6 +58,9 @@
 /*main*/
 main {
     margin-top: 50px;
+    padding: 50px 0;
+    background-image: url(../img/vecteezy_astratto-bella-sfocatura-dello-sfondo-di-montagna-e-fiume_2267905.jpg);
+    background-size: 100%;
 }
 
 .main-content .container {
@@ -65,10 +68,15 @@ main {
     align-items: center;
     width: 50%;
     margin: 0 auto;
+    border-radius: 25px;
+    min-height: 500px;
+}
+
+.main-content .up {
     min-height: 500px;
     background-image: url(../img/treno\ uhuh\ ahah.webp);
     background-repeat: no-repeat;
-    border-radius: 25px;
+    box-shadow: 5px 10px 18px #000000;
 }
 
 .main-content .ticket-buying {
@@ -84,4 +92,38 @@ main {
 .main-content h1 {
     margin-top: 5px;
     text-align: center;
+}
+
+.name, .distance, .age, .passenger, .carriage, .train, .cost {
+    margin: 15px 0 20px 10px;
+    
+}
+
+.ticket-buying input {
+    border: 2px solid #006a6a;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.ticket-buying .disclaimer {
+    color: rgb(155, 152, 152);
+    font-size: 12px;
+}
+
+.main-content button {
+    color: #fff;
+    background-color: #006a6a;
+    padding: 5px 10px;
+    border-color: #006a6a;
+    margin: 5px 0 0 10px;
+    border-radius: 10px;
+}
+
+.main-content button:hover {
+    cursor: pointer;
+}
+
+.main-content .buy {
+    padding: 10px 20px;
+    margin: 20px 0 0 20px;
 }
