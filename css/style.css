@@ -99,6 +99,10 @@ main {
     
 }
 
+.passenger-final, .carriage-final, .train-final, .cost-final {
+    font-weight: bold;
+}
+
 .ticket-buying input {
     border: 2px solid #006a6a;
     border-radius: 10px;
