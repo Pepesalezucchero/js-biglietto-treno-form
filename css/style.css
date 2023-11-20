@@ -131,3 +131,7 @@ main {
     padding: 10px 20px;
     margin: 20px 0 0 20px;
 }
+
+#euro::after {
+    content: "\20AC";
+}
